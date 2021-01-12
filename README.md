@@ -7,4 +7,4 @@ The goal of this project is to create a daily planner with hourly intervals whic
 In addition to HTML and some custom CSS, I've also implemented a number of Bootstrap classes and used JQuery to traverse the DOM and maintain status through browser refresh. MomentJS is in place to track the date at the top of the page as well as the current time as it pertains to the schedule itself. The save icon is from online directory FontAwesome.
 
 # Screenshot
-https://github.com/kirkbalop/daily-planner/blob/main/images/dp_screenshot.png
+<img src=https://github.com/kirkbalop/daily-planner/blob/main/images/dp_screenshot.png>
