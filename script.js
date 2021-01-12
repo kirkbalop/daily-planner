@@ -1,15 +1,14 @@
 $(document).ready(function(){
-$("#currentDay").text(moment().format("MMMM DD, YYYY"));
+$("#currentDay").text(moment().format("dddd, MMMM DD"));
 });
 
-$(document).ready(function(){
-    $(".saveBtn").on("click", function(){
-        var text = $(this).siblings("description").val();
-        var time = $(this).parent().attr("id");
-    // json stringify google JSON.stringify localstorage
-        localStorage.setItem("text", JSON.stringify(text));
-        localStorage.setItem("time", JSON.stringify(time));
-    })
+$(".saveBtn").on("click", function() {
+    var taskText = $(this).siblings(".description").val();
+    var taskTime = $(this).parent().attr("id");
+
+    console.log(taskText, taskTime);
+
+    localStorage.setItem(taskTime, taskText)
 });
 
 function timeKeeper() {
@@ -39,7 +38,7 @@ function timeKeeper() {
 };
 
 // JSON parse
-// previous attempts to parse result in failure of color-coding
+// previous attempts to parse result in failure of color coding
 $("#hour9 .description").val(localStorage.getItem("hour9"));
 $("#hour10 .description").val(localStorage.getItem("hour10"));
 $("#hour11 .description").val(localStorage.getItem("hour11"));
