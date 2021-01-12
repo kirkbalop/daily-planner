@@ -8,3 +8,5 @@ In addition to HTML and some custom CSS, I've also implemented a number of Boots
 
 # Screenshot
 <img src=https://github.com/kirkbalop/daily-planner/blob/main/images/dp_screenshot.png>
+
+https://kirkbalop.github.io/daily-planner/
